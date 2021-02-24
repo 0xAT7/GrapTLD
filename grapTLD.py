@@ -1,4 +1,3 @@
-import os
 import sys
 
 filepath = sys.argv[1]
