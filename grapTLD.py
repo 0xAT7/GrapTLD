@@ -6,7 +6,7 @@ try:
             for line in file:
                 tld = [".com", ".net", ".org", ".uk", ".fr", ".edu", ".de", ".eu", ".ie", ".int", ".mil", ".biz", ".io", ".jp", ".services", ".nl"]
                 for tl in tld:
-                    if tl and tl + "/" in line:
+                    if tl + "/" in line:
                         x = line[:line.rfind("/")]
                         if "http" in x:
                             y = x.split('/')[2]
