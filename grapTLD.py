@@ -43,7 +43,7 @@ def sorting(output):
                 print("Done! Check your file: " + sys.argv[2])
 
 if __name__ == '__main__':
-    if len(sys.argv) >  2:
+    if len(sys.argv) > 2:
         gettld(sys.argv[1] , sys.argv[2])
         sorting(sys.argv[2])
     else:
