@@ -38,13 +38,13 @@ try:
     def sorting(output):
         with open(output) as result:
                 uniqlines = set(result.readlines())
-                lines = filter(lambda x: not x.isspace(), uniqlines)
+                delemptylines = filter(lambda x: not x.isspace(), uniqlines)
                 with open(output, 'w') as final_file:
-                    final_file.writelines(set(lines))
+                    final_file.writelines(set(delemptylines))
 
     gettld(sys.argv[1] , sys.argv[2])
     sorting(sys.argv[2])
     print("Done! Check your file: " + sys.argv[2])
-    
+
 except:
     print("Usage: python3 grapTLD.py list.txt output.txt")
