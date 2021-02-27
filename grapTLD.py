@@ -15,7 +15,7 @@ def gettld(filepath, output):
                         else:
                             print(y, file=open(output, "a"))
                     elif "www." in x:
-                        print(x.split('www.')[1], file=open("output", "a"))
+                        print(x.split('www.')[1], file=open(output, "a"))
                     else:
                         x = line.split('/')[0]
                         print(x, file=open(output, "a"))
